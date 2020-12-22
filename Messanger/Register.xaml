@@ -1,0 +1,54 @@
+﻿<Window x:Class="Messanger.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Messanger"
+        mc:Ignorable="d"
+        Title="Register" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid Background="#FF333337">
+        <Label x:Name="label" Content="MessangerApp" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Blackadder ITC" FontSize="50" Background="{x:Null}" Foreground="White"/>
+        <Label x:Name="label1" Content="Registration" HorizontalAlignment="Center" Margin="0,89,0,0" VerticalAlignment="Top" FontFamily="Blackadder ITC" FontSize="30" Foreground="White"/>
+        <TextBox x:Name="login_tb" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" FontFamily="Blackadder ITC" TextAlignment="Center" FontSize="20" Background="White" Foreground="#FF6B6969" BorderBrush="Black" Margin="195,142,0,0" Text="login" LostFocus="login_tb_LostFocus" PreviewMouseLeftButtonDown="login_tb_PreviewMouseLeftButtonDown">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="password_tb"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" FontFamily="Blackadder ITC" TextAlignment="Center" FontSize="20" BorderBrush="#FF030405" PreviewMouseLeftButtonDown="password_tb_PreviewMouseLeftButtonDown" Foreground="#FF6B6969" Text="password" LostFocus="password_tb_LostFocus" Margin="195,189,0,0">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="repPassword_tb" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" FontFamily="Blackadder ITC" TextAlignment="Center" FontSize="20" BorderBrush="#FF030405" PreviewMouseLeftButtonDown="repPassword_tb_PreviewMouseLeftButtonDown" Foreground="#FF6B6969" Text="repeat password" LostFocus="repPassword_tb_LostFocus" Margin="195,234,0,0">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="firstName_tb" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" FontFamily="Blackadder ITC" TextAlignment="Center" FontSize="20" Background="White" Foreground="#FF6B6969" BorderBrush="Black" Margin="425,142,0,0" PreviewMouseLeftButtonDown="firstName_tb_PreviewMouseLeftButtonDown" Text="first name" LostFocus="firstName_tb_LostFocus">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="lastName_tb" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" FontFamily="Blackadder ITC" TextAlignment="Center" FontSize="20" BorderBrush="#FF030405" PreviewMouseLeftButtonDown="lastName_tb_PreviewMouseLeftButtonDown" Foreground="#FF6B6969" Text="last name" LostFocus="lastName_tb_LostFocus" Margin="425,189,0,0">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="email_tb" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" FontFamily="Blackadder ITC" TextAlignment="Center" FontSize="20" BorderBrush="#FF030405" PreviewMouseLeftButtonDown="email_tb_PreviewMouseLeftButtonDown" Foreground="#FF6B6969" Text="email" LostFocus="email_tb_LostFocus" Margin="425,234,0,0">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Button x:Name="register_b" Content="register" HorizontalAlignment="Left" Margin="425,295,0,0" VerticalAlignment="Top" FontFamily="Blackadder ITC" FontSize="18" Width="132" Cursor="Hand" ClickMode="Press" Background="#FF7AC0FF" Click="register_b_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="back_b" Content="back" HorizontalAlignment="Left" Margin="243,295,0,0" VerticalAlignment="Top" FontFamily="Blackadder ITC" FontSize="18" Width="132" Cursor="Hand" ClickMode="Press" Click="back_b_Click" Background="#FF7AC0FF">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>
